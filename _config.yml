@@ -35,10 +35,12 @@ paginate_path: blog/page:num
 navigation_header:
 - title: Home
   url: /
-- title: About
-  url: /about/
-- title: Blog
+- title: 分类
+  url: /categories/
+- title: 博客
   url: /blog/
+- title: 关于
+  url: /about/
 
 # Footer nav
 navigation_footer:
