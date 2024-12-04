@@ -1,5 +1,5 @@
 ---
-title: 首页
+title: 欢迎来到我的博客
 feature_image: "/static/logo.jpg"
 feature_text: |
   ## 你好 世界
