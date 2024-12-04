@@ -77,6 +77,12 @@ openssl x509 -req -in drlg.b.cc.csr \
     -extensions req_ext
 ```
 
+### 签发客户端证书
+
+```bash
+openssl pkcs12 -export -out server.pfx -inkey drlg.b.cc.key -in drlg.b.cc.crt -certfile ca.crt
+```
+
 ### 步骤 5：验证新证书
 
 确认新证书是否正确包含了 SAN：
@@ -109,6 +115,8 @@ server {
     ssl_certificate_key /path/to/drlg.b.cc.key;
     ssl_trusted_certificate /path/to/ca.crt;  # 如果适用
 
+    ssl_client_certificate /www/server/panel/vhost/cert/bt.b.cc/ca.crt;  # 客户端证书验证
+    ssl_verify_client on;# SSL 证书失效时拒绝访问
     # 其他配置...
 }
 ```
