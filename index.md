@@ -5,7 +5,17 @@ feature_text: |
   ## 你好 世界
 ---
 
+# 欢迎来到我的博客
 
-## 欢迎来到我的 Jekyll 网站
+这是我的个人博客，我将分享关于技术、编程和生活的文章。欢迎浏览！
 
-这是使用 Jekyll 生成的 GitHub Pages 网站。
+## 最新文章
+
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
