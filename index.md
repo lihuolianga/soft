@@ -1,6 +1,6 @@
 ---
 title: 首页
-feature_image: "./static.jpg"
+feature_image: "/static/logo.jpg"
 feature_text: |
   ## 你好 世界
 ---

@@ -25,7 +25,7 @@ baseurl: ''
 title: '吖天语软件记录'
 description: '吖天语软件记录'
 permalink: pretty
-logo: "./static/logo.jpg"
+logo: "/static/logo.jpg"
 
 # Pagination
 paginate: 5
