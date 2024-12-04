@@ -82,8 +82,8 @@ defaults:
 
 email: "me@daviddarnes.com"
 navigation_footer:
-- title: Created by David Darnes
-  url: https://darn.es
+- title: Created by 吖天雨
+  url: https://1m8.co
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/DavidDarnes
