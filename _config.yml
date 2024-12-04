@@ -33,7 +33,7 @@ paginate_path: blog/page:num
 
 # Header nav
 navigation_header:
-- title: Home
+- title: 首页
   url: /
 - title: 分类
   url: /categories/
@@ -44,7 +44,7 @@ navigation_header:
 
 # Footer nav
 navigation_footer:
-- title: Back to top
+- title: top1
   url: "#top"
 
 # Collections
