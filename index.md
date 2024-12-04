@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 # 欢迎来到我的 Jekyll 网站！
