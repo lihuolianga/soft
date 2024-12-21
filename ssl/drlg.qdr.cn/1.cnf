@@ -1,0 +1,22 @@
+[ req ]
+default_bits        = 2048
+distinguished_name  = req_distinguished_name
+req_extensions      = req_ext
+prompt              = no
+
+[ req_distinguished_name ]
+C  = CN
+ST = Beijing
+L  = Beijing
+O  = qidaren
+OU = IT Department
+CN = *.qdr.cn
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = *.qdr.cn
+DNS.2 = *.drlg.qdr.cn
+DNS.3 = *.s.7daren.cn
+DNS.4 = *.drlg.s.7daren.cn

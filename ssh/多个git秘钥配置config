@@ -1,0 +1,25 @@
+# 针对第一个仓库（repo1）
+
+Host github-guoliang
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+# 针对第二个仓库（repo2）
+
+Host gitee-qdr
+  HostName gitee.com
+  User git
+  IdentityFile ~/.ssh/qdr
+  IdentitiesOnly yes
+
+  
+# 针对第三个仓库（repo3）
+
+Host gitea-qdr
+  HostName 192.168.11.19
+  User git
+  Port 22
+  IdentityFile ~/.ssh/qidaren_gitea
+  IdentitiesOnly yes

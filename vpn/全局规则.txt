@@ -1,0 +1,25 @@
+# Profile Enhancement Merge Template for Clash Verge
+
+profile:
+  store-selected: true
+
+dns:
+  use-system-hosts: true
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip  # Modes: fake-ip, redir-host
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 114.114.114.114  # Add local DNS if needed
+  fallback:
+    - tls://1.0.0.1
+    - tls://8.8.4.4
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+
+# rules:
+#     - GEOIP,CN,DIRECT
+#     - MATCH,Default

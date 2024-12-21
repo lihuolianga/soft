@@ -1,0 +1,1458 @@
+mode: rule
+mixed-port: 7897
+allow-lan: false
+log-level: info
+external-controller: 127.0.0.1:9097
+secret: ''
+unified-delay: true
+profile:
+  store-selected: true
+bind-address: '*'
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  strict-route: false
+  auto-detect-interface: true
+  dns-hijack:
+  - any:53
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 8.8.8.8
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback:
+  - https://doh.dns.sb/dns-query
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.twnic.tw/dns-query
+  - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  use-system-hosts: false
+external-controller-cors:
+  allow-private-network: true
+  allow-origins:
+  - '*'
+proxies:
+- name: '[trojan] 最新网址：1yunti.com'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56301
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 剩余流量：97.54 GB'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56301
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 距离下次重置剩余：30 天'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56301
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 套餐到期：2025-01-13'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56301
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56301
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56302
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56303
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56304
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56305
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 06'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56306
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 07'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56307
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 08'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56308
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 09'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56309
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 10'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56310
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 11'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56311
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 12'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56312
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 13'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56313
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 14'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56314
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 15'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56315
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 16'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56316
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 17'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56317
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 18'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56318
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 19'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56319
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 香港 20'
+  type: trojan
+  server: ip0axv1bbsu02k7-hk.1ytnode.com
+  port: 56320
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56321
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56322
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56323
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56324
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56325
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 06'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56326
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 07'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56327
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 08'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56328
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 09'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56329
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 台湾 10'
+  type: trojan
+  server: ip0axv1bbsu02k7-tw.1ytnode.com
+  port: 56330
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56331
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56332
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56333
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56334
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56335
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 06'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56336
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 07'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56337
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 08'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56338
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 09'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56339
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 新加坡 10'
+  type: trojan
+  server: ip0axv1bbsu02k7-sg.1ytnode.com
+  port: 56340
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56341
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56342
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56343
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56344
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56345
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 06'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56346
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 07'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56347
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 08'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56348
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 09'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56349
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 日本 10'
+  type: trojan
+  server: ip0axv1bbsu02k7-jp.1ytnode.com
+  port: 56350
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56351
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56352
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56353
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56354
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56355
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 06'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56356
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 07'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56357
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 08'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56358
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 09'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56359
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 美国 10'
+  type: trojan
+  server: ip0axv1bbsu02k7-us.1ytnode.com
+  port: 56360
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 韩国01'
+  type: trojan
+  server: ip0axv1bbsu02k7-kr.1ytnode.com
+  port: 56361
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 韩国02'
+  type: trojan
+  server: ip0axv1bbsu02k7-kr.1ytnode.com
+  port: 56362
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 韩国03'
+  type: trojan
+  server: ip0axv1bbsu02k7-kr.1ytnode.com
+  port: 56363
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 马来西亚 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56366
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 马来西亚 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56367
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 马来西亚 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56368
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 马来西亚 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56369
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 马来西亚 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-my.1ytnode.com
+  port: 56370
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 英国 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-uk.1ytnode.com
+  port: 56371
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 英国 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-uk.1ytnode.com
+  port: 56372
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 英国 03'
+  type: trojan
+  server: ip0axv1bbsu02k7-uk.1ytnode.com
+  port: 56373
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 英国 04'
+  type: trojan
+  server: ip0axv1bbsu02k7-uk.1ytnode.com
+  port: 56374
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 英国 05'
+  type: trojan
+  server: ip0axv1bbsu02k7-uk.1ytnode.com
+  port: 56375
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 泰国 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-th.1ytnode.com
+  port: 56376
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 泰国 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-th.1ytnode.com
+  port: 56377
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 越南 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-vn.1ytnode.com
+  port: 56378
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 越南 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-vn.1ytnode.com
+  port: 56379
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 菲律宾 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-ph.1ytnode.com
+  port: 56380
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 菲律宾 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-ph.1ytnode.com
+  port: 56381
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 印度 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-in.1ytnode.com
+  port: 56382
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 土耳其 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-tr.1ytnode.com
+  port: 56384
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 土耳其 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-tr.1ytnode.com
+  port: 56385
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 阿根廷 01'
+  type: trojan
+  server: ip0axv1bbsu02k7-ar.1ytnode.com
+  port: 56388
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+- name: '[trojan] 阿根廷 02'
+  type: trojan
+  server: ip0axv1bbsu02k7-ar.1ytnode.com
+  port: 56389
+  password: 9e412d42-9ac1-4737-8d0e-9342606a736c
+  udp: true
+  skip-cert-verify: true
+proxy-groups:
+- name: 一云梯 1yunti.com
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - '[trojan] 最新网址：1yunti.com'
+  - '[trojan] 剩余流量：97.54 GB'
+  - '[trojan] 距离下次重置剩余：30 天'
+  - '[trojan] 套餐到期：2025-01-13'
+  - '[trojan] 香港 01'
+  - '[trojan] 香港 02'
+  - '[trojan] 香港 03'
+  - '[trojan] 香港 04'
+  - '[trojan] 香港 05'
+  - '[trojan] 香港 06'
+  - '[trojan] 香港 07'
+  - '[trojan] 香港 08'
+  - '[trojan] 香港 09'
+  - '[trojan] 香港 10'
+  - '[trojan] 香港 11'
+  - '[trojan] 香港 12'
+  - '[trojan] 香港 13'
+  - '[trojan] 香港 14'
+  - '[trojan] 香港 15'
+  - '[trojan] 香港 16'
+  - '[trojan] 香港 17'
+  - '[trojan] 香港 18'
+  - '[trojan] 香港 19'
+  - '[trojan] 香港 20'
+  - '[trojan] 台湾 01'
+  - '[trojan] 台湾 02'
+  - '[trojan] 台湾 03'
+  - '[trojan] 台湾 04'
+  - '[trojan] 台湾 05'
+  - '[trojan] 台湾 06'
+  - '[trojan] 台湾 07'
+  - '[trojan] 台湾 08'
+  - '[trojan] 台湾 09'
+  - '[trojan] 台湾 10'
+  - '[trojan] 新加坡 01'
+  - '[trojan] 新加坡 02'
+  - '[trojan] 新加坡 03'
+  - '[trojan] 新加坡 04'
+  - '[trojan] 新加坡 05'
+  - '[trojan] 新加坡 06'
+  - '[trojan] 新加坡 07'
+  - '[trojan] 新加坡 08'
+  - '[trojan] 新加坡 09'
+  - '[trojan] 新加坡 10'
+  - '[trojan] 日本 01'
+  - '[trojan] 日本 02'
+  - '[trojan] 日本 03'
+  - '[trojan] 日本 04'
+  - '[trojan] 日本 05'
+  - '[trojan] 日本 06'
+  - '[trojan] 日本 07'
+  - '[trojan] 日本 08'
+  - '[trojan] 日本 09'
+  - '[trojan] 日本 10'
+  - '[trojan] 美国 01'
+  - '[trojan] 美国 02'
+  - '[trojan] 美国 03'
+  - '[trojan] 美国 04'
+  - '[trojan] 美国 05'
+  - '[trojan] 美国 06'
+  - '[trojan] 美国 07'
+  - '[trojan] 美国 08'
+  - '[trojan] 美国 09'
+  - '[trojan] 美国 10'
+  - '[trojan] 韩国01'
+  - '[trojan] 韩国02'
+  - '[trojan] 韩国03'
+  - '[trojan] 马来西亚 01'
+  - '[trojan] 马来西亚 02'
+  - '[trojan] 马来西亚 03'
+  - '[trojan] 马来西亚 04'
+  - '[trojan] 马来西亚 05'
+  - '[trojan] 英国 01'
+  - '[trojan] 英国 02'
+  - '[trojan] 英国 03'
+  - '[trojan] 英国 04'
+  - '[trojan] 英国 05'
+  - '[trojan] 泰国 01'
+  - '[trojan] 泰国 02'
+  - '[trojan] 越南 01'
+  - '[trojan] 越南 02'
+  - '[trojan] 菲律宾 01'
+  - '[trojan] 菲律宾 02'
+  - '[trojan] 印度 01'
+  - '[trojan] 土耳其 01'
+  - '[trojan] 土耳其 02'
+  - '[trojan] 阿根廷 01'
+  - '[trojan] 阿根廷 02'
+- name: 自动选择
+  type: url-test
+  proxies:
+  - '[trojan] 最新网址：1yunti.com'
+  - '[trojan] 剩余流量：97.54 GB'
+  - '[trojan] 距离下次重置剩余：30 天'
+  - '[trojan] 套餐到期：2025-01-13'
+  - '[trojan] 香港 01'
+  - '[trojan] 香港 02'
+  - '[trojan] 香港 03'
+  - '[trojan] 香港 04'
+  - '[trojan] 香港 05'
+  - '[trojan] 香港 06'
+  - '[trojan] 香港 07'
+  - '[trojan] 香港 08'
+  - '[trojan] 香港 09'
+  - '[trojan] 香港 10'
+  - '[trojan] 香港 11'
+  - '[trojan] 香港 12'
+  - '[trojan] 香港 13'
+  - '[trojan] 香港 14'
+  - '[trojan] 香港 15'
+  - '[trojan] 香港 16'
+  - '[trojan] 香港 17'
+  - '[trojan] 香港 18'
+  - '[trojan] 香港 19'
+  - '[trojan] 香港 20'
+  - '[trojan] 台湾 01'
+  - '[trojan] 台湾 02'
+  - '[trojan] 台湾 03'
+  - '[trojan] 台湾 04'
+  - '[trojan] 台湾 05'
+  - '[trojan] 台湾 06'
+  - '[trojan] 台湾 07'
+  - '[trojan] 台湾 08'
+  - '[trojan] 台湾 09'
+  - '[trojan] 台湾 10'
+  - '[trojan] 新加坡 01'
+  - '[trojan] 新加坡 02'
+  - '[trojan] 新加坡 03'
+  - '[trojan] 新加坡 04'
+  - '[trojan] 新加坡 05'
+  - '[trojan] 新加坡 06'
+  - '[trojan] 新加坡 07'
+  - '[trojan] 新加坡 08'
+  - '[trojan] 新加坡 09'
+  - '[trojan] 新加坡 10'
+  - '[trojan] 日本 01'
+  - '[trojan] 日本 02'
+  - '[trojan] 日本 03'
+  - '[trojan] 日本 04'
+  - '[trojan] 日本 05'
+  - '[trojan] 日本 06'
+  - '[trojan] 日本 07'
+  - '[trojan] 日本 08'
+  - '[trojan] 日本 09'
+  - '[trojan] 日本 10'
+  - '[trojan] 美国 01'
+  - '[trojan] 美国 02'
+  - '[trojan] 美国 03'
+  - '[trojan] 美国 04'
+  - '[trojan] 美国 05'
+  - '[trojan] 美国 06'
+  - '[trojan] 美国 07'
+  - '[trojan] 美国 08'
+  - '[trojan] 美国 09'
+  - '[trojan] 美国 10'
+  - '[trojan] 韩国01'
+  - '[trojan] 韩国02'
+  - '[trojan] 韩国03'
+  - '[trojan] 马来西亚 01'
+  - '[trojan] 马来西亚 02'
+  - '[trojan] 马来西亚 03'
+  - '[trojan] 马来西亚 04'
+  - '[trojan] 马来西亚 05'
+  - '[trojan] 英国 01'
+  - '[trojan] 英国 02'
+  - '[trojan] 英国 03'
+  - '[trojan] 英国 04'
+  - '[trojan] 英国 05'
+  - '[trojan] 泰国 01'
+  - '[trojan] 泰国 02'
+  - '[trojan] 越南 01'
+  - '[trojan] 越南 02'
+  - '[trojan] 菲律宾 01'
+  - '[trojan] 菲律宾 02'
+  - '[trojan] 印度 01'
+  - '[trojan] 土耳其 01'
+  - '[trojan] 土耳其 02'
+  - '[trojan] 阿根廷 01'
+  - '[trojan] 阿根廷 02'
+  url: http://www.gstatic.com/generate_204
+  interval: 86400
+- name: 故障转移
+  type: fallback
+  proxies:
+  - '[trojan] 最新网址：1yunti.com'
+  - '[trojan] 剩余流量：97.54 GB'
+  - '[trojan] 距离下次重置剩余：30 天'
+  - '[trojan] 套餐到期：2025-01-13'
+  - '[trojan] 香港 01'
+  - '[trojan] 香港 02'
+  - '[trojan] 香港 03'
+  - '[trojan] 香港 04'
+  - '[trojan] 香港 05'
+  - '[trojan] 香港 06'
+  - '[trojan] 香港 07'
+  - '[trojan] 香港 08'
+  - '[trojan] 香港 09'
+  - '[trojan] 香港 10'
+  - '[trojan] 香港 11'
+  - '[trojan] 香港 12'
+  - '[trojan] 香港 13'
+  - '[trojan] 香港 14'
+  - '[trojan] 香港 15'
+  - '[trojan] 香港 16'
+  - '[trojan] 香港 17'
+  - '[trojan] 香港 18'
+  - '[trojan] 香港 19'
+  - '[trojan] 香港 20'
+  - '[trojan] 台湾 01'
+  - '[trojan] 台湾 02'
+  - '[trojan] 台湾 03'
+  - '[trojan] 台湾 04'
+  - '[trojan] 台湾 05'
+  - '[trojan] 台湾 06'
+  - '[trojan] 台湾 07'
+  - '[trojan] 台湾 08'
+  - '[trojan] 台湾 09'
+  - '[trojan] 台湾 10'
+  - '[trojan] 新加坡 01'
+  - '[trojan] 新加坡 02'
+  - '[trojan] 新加坡 03'
+  - '[trojan] 新加坡 04'
+  - '[trojan] 新加坡 05'
+  - '[trojan] 新加坡 06'
+  - '[trojan] 新加坡 07'
+  - '[trojan] 新加坡 08'
+  - '[trojan] 新加坡 09'
+  - '[trojan] 新加坡 10'
+  - '[trojan] 日本 01'
+  - '[trojan] 日本 02'
+  - '[trojan] 日本 03'
+  - '[trojan] 日本 04'
+  - '[trojan] 日本 05'
+  - '[trojan] 日本 06'
+  - '[trojan] 日本 07'
+  - '[trojan] 日本 08'
+  - '[trojan] 日本 09'
+  - '[trojan] 日本 10'
+  - '[trojan] 美国 01'
+  - '[trojan] 美国 02'
+  - '[trojan] 美国 03'
+  - '[trojan] 美国 04'
+  - '[trojan] 美国 05'
+  - '[trojan] 美国 06'
+  - '[trojan] 美国 07'
+  - '[trojan] 美国 08'
+  - '[trojan] 美国 09'
+  - '[trojan] 美国 10'
+  - '[trojan] 韩国01'
+  - '[trojan] 韩国02'
+  - '[trojan] 韩国03'
+  - '[trojan] 马来西亚 01'
+  - '[trojan] 马来西亚 02'
+  - '[trojan] 马来西亚 03'
+  - '[trojan] 马来西亚 04'
+  - '[trojan] 马来西亚 05'
+  - '[trojan] 英国 01'
+  - '[trojan] 英国 02'
+  - '[trojan] 英国 03'
+  - '[trojan] 英国 04'
+  - '[trojan] 英国 05'
+  - '[trojan] 泰国 01'
+  - '[trojan] 泰国 02'
+  - '[trojan] 越南 01'
+  - '[trojan] 越南 02'
+  - '[trojan] 菲律宾 01'
+  - '[trojan] 菲律宾 02'
+  - '[trojan] 印度 01'
+  - '[trojan] 土耳其 01'
+  - '[trojan] 土耳其 02'
+  - '[trojan] 阿根廷 01'
+  - '[trojan] 阿根廷 02'
+  url: http://www.gstatic.com/generate_204
+  interval: 7200
+rules:
+- DOMAIN,1ytdy.1ytcf.com,DIRECT
+- DOMAIN-SUFFIX,services.googleapis.cn,一云梯 1yunti.com
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,一云梯 1yunti.com
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,digicert.com,一云梯 1yunti.com
+- DOMAIN,ocsp.apple.com,一云梯 1yunti.com
+- DOMAIN,ocsp.comodoca.com,一云梯 1yunti.com
+- DOMAIN,ocsp.usertrust.com,一云梯 1yunti.com
+- DOMAIN,ocsp.sectigo.com,一云梯 1yunti.com
+- DOMAIN,ocsp.verisign.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,apple-dns.net,一云梯 1yunti.com
+- DOMAIN,testflight.apple.com,一云梯 1yunti.com
+- DOMAIN,sandbox.itunes.apple.com,一云梯 1yunti.com
+- DOMAIN,itunes.apple.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,apps.apple.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blobstore.apple.com,一云梯 1yunti.com
+- DOMAIN,cvws.icloud-content.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,一云梯 1yunti.com
+- DOMAIN-KEYWORD,google,一云梯 1yunti.com
+- DOMAIN-KEYWORD,gmail,一云梯 1yunti.com
+- DOMAIN-KEYWORD,youtube,一云梯 1yunti.com
+- DOMAIN-KEYWORD,facebook,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fb.me,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fbcdn.net,一云梯 1yunti.com
+- DOMAIN-KEYWORD,twitter,一云梯 1yunti.com
+- DOMAIN-KEYWORD,instagram,一云梯 1yunti.com
+- DOMAIN-KEYWORD,dropbox,一云梯 1yunti.com
+- DOMAIN-SUFFIX,twimg.com,一云梯 1yunti.com
+- DOMAIN-KEYWORD,blogspot,一云梯 1yunti.com
+- DOMAIN-SUFFIX,youtu.be,一云梯 1yunti.com
+- DOMAIN-KEYWORD,whatsapp,一云梯 1yunti.com
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,abpchina.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,adblockplus.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,adobe.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,akamaized.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,alfredapp.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,amplitude.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ampproject.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,android.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,angularjs.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,aolcdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,apkpure.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,appledaily.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,appshopper.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,appspot.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,arcgis.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,archive.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,armorgames.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,aspnetcdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,att.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,awsstatic.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,azureedge.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,azurewebsites.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bing.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bintray.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bit.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bit.ly,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bitbucket.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bjango.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bkrtx.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blog.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blogcdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blogger.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blogsmithmedia.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blogspot.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,blogspot.hk,一云梯 1yunti.com
+- DOMAIN-SUFFIX,bloomberg.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,box.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,box.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cachefly.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,chromium.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cl.ly,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cloudflare.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cloudfront.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cloudmagic.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cmail19.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cnet.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,cocoapods.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,comodoca.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,crashlytics.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,culturedcode.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,d.pr,一云梯 1yunti.com
+- DOMAIN-SUFFIX,danilo.to,一云梯 1yunti.com
+- DOMAIN-SUFFIX,dayone.me,一云梯 1yunti.com
+- DOMAIN-SUFFIX,db.tt,一云梯 1yunti.com
+- DOMAIN-SUFFIX,deskconnect.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,disq.us,一云梯 1yunti.com
+- DOMAIN-SUFFIX,disqus.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,disquscdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,dnsimple.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,docker.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,dribbble.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,droplr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,duckduckgo.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,dueapp.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,dytt8.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,edgecastcdn.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,edgekey.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,edgesuite.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,engadget.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,entrust.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,eurekavpt.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,evernote.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fabric.io,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fast.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fastly.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fc2.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,feedburner.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,feedly.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,feedsportal.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,fiftythree.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,firebaseio.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,flexibits.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,flickr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,flipboard.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,g.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gabia.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,geni.us,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gfx.ms,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ggpht.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ghostnoteapp.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,git.io,一云梯 1yunti.com
+- DOMAIN-KEYWORD,github,一云梯 1yunti.com
+- DOMAIN-SUFFIX,globalsign.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gmodules.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,godaddy.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,golang.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gongm.in,一云梯 1yunti.com
+- DOMAIN-SUFFIX,goo.gl,一云梯 1yunti.com
+- DOMAIN-SUFFIX,goodreaders.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,goodreads.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gravatar.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gstatic.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,gvt0.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,hockeyapp.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,hotmail.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,icons8.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ifixit.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ift.tt,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ifttt.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,iherb.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,imageshack.us,一云梯 1yunti.com
+- DOMAIN-SUFFIX,img.ly,一云梯 1yunti.com
+- DOMAIN-SUFFIX,imgur.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,imore.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,instapaper.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ipn.li,一云梯 1yunti.com
+- DOMAIN-SUFFIX,is.gd,一云梯 1yunti.com
+- DOMAIN-SUFFIX,issuu.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,itgonglun.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,itun.es,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ixquick.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,j.mp,一云梯 1yunti.com
+- DOMAIN-SUFFIX,js.revsci.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,jshint.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,jtvnw.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,justgetflux.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,kat.cr,一云梯 1yunti.com
+- DOMAIN-SUFFIX,klip.me,一云梯 1yunti.com
+- DOMAIN-SUFFIX,libsyn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,linkedin.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,line-apps.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,linode.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,lithium.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,littlehj.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,live.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,live.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,livefilestore.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,llnwd.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,macid.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,macromedia.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,macrumors.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mashable.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mathjax.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,medium.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mega.co.nz,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mega.nz,一云梯 1yunti.com
+- DOMAIN-SUFFIX,megaupload.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,microsofttranslator.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mindnode.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,mobile01.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,modmyi.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,msedge.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,myfontastic.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,name.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,nextmedia.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,nsstatic.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,nssurge.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,nyt.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,nytimes.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,omnigroup.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,onedrive.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,onenote.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ooyala.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,openvpn.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,openwrt.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,orkut.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,osxdaily.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,outlook.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ow.ly,一云梯 1yunti.com
+- DOMAIN-SUFFIX,paddleapi.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,parallels.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,parse.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pdfexpert.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,periscope.tv,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pinboard.in,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pinterest.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pixelmator.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pixiv.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,playpcesor.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,playstation.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,playstation.com.hk,一云梯 1yunti.com
+- DOMAIN-SUFFIX,playstation.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,playstationnetwork.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,pushwoosh.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,rime.im,一云梯 1yunti.com
+- DOMAIN-SUFFIX,servebom.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sfx.ms,一云梯 1yunti.com
+- DOMAIN-SUFFIX,shadowsocks.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sharethis.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,shazam.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,skype.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,smartdns一云梯 1yunti.com.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,smartmailcloud.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sndcdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sony.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,soundcloud.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sourceforge.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,spotify.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,squarespace.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,sstatic.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,st.luluku.pw,一云梯 1yunti.com
+- DOMAIN-SUFFIX,stackoverflow.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,startpage.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,staticflickr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,steamcommunity.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,symauth.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,symcb.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,symcd.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tapbots.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tapbots.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tdesktop.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,techcrunch.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,techsmith.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,thepiratebay.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,theverge.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,time.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,timeinc.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tiny.cc,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tinypic.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tmblr.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,todoist.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,trello.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,trustasiassl.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tumblr.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tumblr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tweetdeck.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,tweetmarker.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,twitch.tv,一云梯 1yunti.com
+- DOMAIN-SUFFIX,txmblr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,typekit.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ubertags.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ublock.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ubnt.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ulyssesapp.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,urchin.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,usertrust.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,v.gd,一云梯 1yunti.com
+- DOMAIN-SUFFIX,v2ex.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vimeo.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vimeocdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vine.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vivaldi.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vox-cdn.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vsco.co,一云梯 1yunti.com
+- DOMAIN-SUFFIX,vultr.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,w.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,w3schools.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,webtype.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wikiwand.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wikileaks.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wikimedia.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wikipedia.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wikipedia.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,windows.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,windows.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wire.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wordpress.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,workflowy.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wp.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wsj.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,wsj.net,一云梯 1yunti.com
+- DOMAIN-SUFFIX,xda-developers.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,xeeno.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,xiti.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,yahoo.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,yimg.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ying.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,yoyo.org,一云梯 1yunti.com
+- DOMAIN-SUFFIX,ytimg.com,一云梯 1yunti.com
+- DOMAIN-SUFFIX,telegra.ph,一云梯 1yunti.com
+- DOMAIN-SUFFIX,telegram.org,一云梯 1yunti.com
+- IP-CIDR,91.108.4.0/22,一云梯 1yunti.com,no-resolve
+- IP-CIDR,91.108.8.0/21,一云梯 1yunti.com,no-resolve
+- IP-CIDR,91.108.16.0/22,一云梯 1yunti.com,no-resolve
+- IP-CIDR,91.108.56.0/22,一云梯 1yunti.com,no-resolve
+- IP-CIDR,149.154.160.0/20,一云梯 1yunti.com,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,一云梯 1yunti.com,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,一云梯 1yunti.com,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.232.181.162/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.241.147.226/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.253.253.226/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.253.255.162/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.253.255.34/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,120.253.255.98/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,180.163.150.162/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,180.163.150.34/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,180.163.151.162/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,180.163.151.34/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,203.208.39.0/24,一云梯 1yunti.com,no-resolve
+- IP-CIDR,203.208.40.0/24,一云梯 1yunti.com,no-resolve
+- IP-CIDR,203.208.41.0/24,一云梯 1yunti.com,no-resolve
+- IP-CIDR,203.208.43.0/24,一云梯 1yunti.com,no-resolve
+- IP-CIDR,203.208.50.0/24,一云梯 1yunti.com,no-resolve
+- IP-CIDR,220.181.174.162/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,220.181.174.226/32,一云梯 1yunti.com,no-resolve
+- IP-CIDR,220.181.174.34/32,一云梯 1yunti.com,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,一云梯 1yunti.com

@@ -1,0 +1,9 @@
+openssl req -new -key qdr.cn.key -out qdr.cn.csr -config 1.cnf
+openssl x509 -req -in qdr.cn.csr \
+    -CA ca.crt -CAkey ca.key \
+    -CAcreateserial \
+    -out qdr.cn.crt \
+    -days 3650 \
+    -extfile 1.cnf \
+    -extensions req_ext
+    openssl pkcs12 -export -out server.pfx -inkey qdr.cn.key -in qdr.cn.crt -certfile ca.crt
